@@ -12,6 +12,8 @@ with open(cereal_csv_path) as csvfile:
     for row in csv_reader:
 
         # Convert row to float and compare to grams of fiber
-        if float(row[7]) >= 5:
+
+        # enhancment data_story change cell number from 7 to 5
+        if float(row[5]) >= 5:
             print(row)
 
